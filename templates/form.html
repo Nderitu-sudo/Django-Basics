@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js'%}"></script>
+</head>
+<body>
+
+    <div class="container " style="max-width: 500px;">
+    <h1 class="text-center mb-4">Contact Form</h1>
+    <p class="text-center mb-3">Please enter your details:</p>
+
+    <form action="#" class="border p-4 ">
+        <p>Required fields are marked with an asterick.</p>
+
+        <div class="row mb-3">
+            <label for="firstname"  class=" col-sm-4">*First name: </label>
+            <input type="text" name="" id="firstname" required>
+
+        </div>
+
+        <br>
+
+        <div class="row">
+            <label for="lastname">*Last name: </label>
+            <input type="text" name="" id="lastname" required>
+
+        </div>
+
+        <br>
+
+        <div class="row">
+            <label for="email">*Email: </label>
+            <input type="email" name="" id="email" required>
+
+        </div>
+
+        <br>
+
+        <div class="row">
+            <label for="tel">Tel: </label>
+            <input type="tel" name="" id="tel" >
+
+        </div>
+
+        <br>
+
+        <div class="row">
+            <label for="fax">Fax: </label>
+            <input type="tel" name="" id="fax" >
+
+        </div>
+
+        <br>
+
+        <div class="row">
+            <label for="mob">Mob: </label>
+            <input type="tel" name="" id="mob" required>
+
+        </div>
+
+        <br>
+
+        <div class="row">
+            <label for="dob">*Date of Birth: </label>
+            <input type="date" name="" id="dob" required>
+
+        </div>
+
+        <br>
+
+         <fieldset>
+      <legend>Gender*</legend>
+      <label><input type="radio" name="gender" value="male" required> Male</label><br>
+      <label><input type="radio" name="gender" value="female"> Female</label><br>
+      <label><input type="radio" name="gender" value="non-binary"> Non-binary</label>
+    </fieldset>
+
+    <br>
+    <label for="comment">Leave a comment:</label><br>
+    <textarea id="comment" name="comment"></textarea><br>
+
+    <br>
+    <button type="submit">Submit</button>
+
+</div>
+    </form>
+</body>
+</html>
